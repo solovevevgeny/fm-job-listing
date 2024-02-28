@@ -20,8 +20,8 @@
   --color-tag-bg: #f0f6f4;
 
   /* other */
-  --br: 0.5rem;
-  --br-sm: 0.3rem;
+  --br: 0.3rem;
+  --br-sm: 0.2rem;
 
   --shadow: 0px 4px 11px 1px rgba(91, 164, 164, 0.31);
 
@@ -54,9 +54,27 @@ a:hover {
   color: var(--color-primary);
 }
 
+a.green {
+  color: var(--color-primary);
+  font-weight: var(--fw-bold);
+}
+a.green:hover {
+  color: var(--color-black);
+}
+
 .header {
   width:100%;
 }
+
+.filters {
+  padding: 20px;
+  background: var(--color-white);
+  box-shadow: var(--shadow);
+  border-radius: var(--br);
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .container {
   max-width: 1240px;
