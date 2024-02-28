@@ -156,3 +156,31 @@ a.green:hover {
 .badge-featured {
   background: var(--color-black);
 }
+
+
+.filter {
+  margin-right: 10px;
+  border-radius: var(--br-sm);
+  cursor: pointer;
+  display: flex;
+  border-radius: var(--br-sm);
+  overflow: hidden;
+}
+
+.filter__name {
+  padding: 10px 15px;
+  background: var(--color-tag-bg);
+  color: var(--color-primary);
+  font-weight: var(--fw-bold);
+}
+
+.filter__icon {
+  padding: 10px 15px;
+  background: var(--color-primary);
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+}
+
+.filter__icon:hover {
+  background: var(--color-VeryDarkGrayishCyan);
+}
