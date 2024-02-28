@@ -13,8 +13,8 @@ export const Card = ({company, logo, _new, featured,position,role,level,postedAt
             <div className="card__info">
                 <div className="card__info-cap flex-inline">
                     <div className='company-name'>{company}</div>
-                    <div>{_new ? 'new': ''}</div>
-                    <div>{featured ? 'featured': ''}</div>
+                    <div>{_new ? <span className="badge badge-new">new</span> : ''}</div>
+                    <div>{featured ? <span className="badge badge-featured">featured</span>: ''}</div>
                 </div>
 
         

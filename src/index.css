@@ -141,3 +141,18 @@ a.green:hover {
   font-weight: var(--fw-bold);
   font-size: var(--fs-md);
 }
+
+.badge {
+  margin: 0 0 0 10px;
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+  color: var(--color-white);
+}
+
+.badge-new {
+  background: var(--color-primary);
+}
+
+.badge-featured {
+  background: var(--color-black);
+}
