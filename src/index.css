@@ -102,6 +102,12 @@ a.green:hover {
   gap: 10px;
 }
 
+.card__info-footer {
+  color: var(--color-DarkGrayishCyan);
+  display: grid;
+  gap: 10px;
+}
+
 .flex-inline {
   display: flex;
   justify-content: start;
