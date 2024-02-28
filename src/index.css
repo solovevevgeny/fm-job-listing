@@ -73,6 +73,7 @@ a.green:hover {
   border-radius: var(--br);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -166,6 +167,8 @@ a.green:hover {
   border-radius: var(--br-sm);
   overflow: hidden;
 }
+
+
 
 .filter__name {
   padding: 10px 15px;
