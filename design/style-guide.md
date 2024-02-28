@@ -20,13 +20,4 @@ The designs were created to the following widths:
 - Dark Grayish Cyan: hsl(180, 8%, 52%)
 - Very Dark Grayish Cyan: hsl(180, 14%, 20%)
 
-## Typography
 
-### Body Copy
-
-- Font size: 15px
-
-### Headings
-
-- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
-- Weights: 500, 700
