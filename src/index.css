@@ -71,7 +71,7 @@ a.green:hover {
 
 header {
   width:100%;
-  background: url('http://localhost:3000/images/bg-header-desktop.svg');
+  background: url('https://solovevevgeny.github.io/fm-job-listing/images/bg-header-desktop.svg');
   min-height: 156px;
   background-color: var(--color-primary);
 }
