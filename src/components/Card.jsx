@@ -18,7 +18,7 @@ export const Card = ({company, logo, _new, featured,position,role,level,postedAt
 
         
                 <div className="card__info-position">
-                    <h2><a href="#">{position}</a></h2>
+                    <h2><a href="">{position}</a></h2>
                 </div>
 
                 <div className="card__info-footer flex-inline">

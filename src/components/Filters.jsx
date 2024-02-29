@@ -1,5 +1,3 @@
-import {useState, useEffect} from "react";
-
 
 const Filters = ({role, level, clearFilters, setLevel, setRole}) => {
   
