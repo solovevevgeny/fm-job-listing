@@ -4,7 +4,6 @@ export const Card = ({company, logo, _new, featured,position,role,level,postedAt
 
 
   return (
-    <>
         <div className='card'>
             <div className="card__logo">
                 <img src={logo} alt={company} />
@@ -58,6 +57,5 @@ export const Card = ({company, logo, _new, featured,position,role,level,postedAt
             </div>
 
         </div>
-    </>
   )
 }
