@@ -11,8 +11,8 @@ import Filters from "./components/Filters";
 function App() {
 
   const [data, setData] = useState([]);
-  const [role,  setRole] = useState('Frontend');
-  const [level, setLevel] = useState('Junior');
+  const [role,  setRole] = useState();
+  const [level, setLevel] = useState();
 
   useEffect (()=>{
     setData(dataJson);
