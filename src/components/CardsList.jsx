@@ -20,6 +20,7 @@ const CardsList = ({data}) => {
                             location={item.location}  
                             languages={item.languages}
                             tools={item.tools}
+                            level={item.level}
                         />
                     )
                 })
