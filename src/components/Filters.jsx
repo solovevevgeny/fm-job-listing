@@ -1,24 +1,16 @@
 import {useState, useEffect} from "react";
 
 
-const Filters = ({role, level}) => {
+const Filters = ({role, level, clearFilters, setLevel, setRole}) => {
   
-  // if (role) {
-  //   console.log(role);
-  // }
-
-  // if (level) {
-  //   console.log(level);
-  // }
-
   return (
     <div className='filters'>
         <div className="filters__active flex-inline">
         {
             role ? (
-              <div className="filter">
+              <div className="filter" key={role}>
                 <div className="filter__name">{role}</div>
-                <div className="filter__icon">X</div>
+                <div className="filter__icon" onClick={()=>setRole('')}>X</div>
               </div>
             ) :
             ('')
@@ -26,9 +18,9 @@ const Filters = ({role, level}) => {
 
         {
             level ? (
-              <div className="filter">
+              <div className="filter" key={level}>
                 <div className="filter__name">{level}</div>
-                <div className="filter__icon">X</div>
+                <div className="filter__icon" onClick={()=>setLevel('')}>X</div>
               </div>
             ) :
             ('')
@@ -37,7 +29,7 @@ const Filters = ({role, level}) => {
 
         </div>
         <div className="filters__clear">
-            <a className='green' href="#">clear</a>
+            <a className='green' href="#" onClick={()=>clearFilters()}>clear</a>
         </div>
 
     </div>
