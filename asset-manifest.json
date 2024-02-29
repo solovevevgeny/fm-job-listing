@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fm-job-listing/static/css/main.5f919f8b.css",
-    "main.js": "/fm-job-listing/static/js/main.7eb8f3ec.js",
+    "main.js": "/fm-job-listing/static/js/main.8212912c.js",
     "index.html": "/fm-job-listing/index.html",
     "main.5f919f8b.css.map": "/fm-job-listing/static/css/main.5f919f8b.css.map",
-    "main.7eb8f3ec.js.map": "/fm-job-listing/static/js/main.7eb8f3ec.js.map"
+    "main.8212912c.js.map": "/fm-job-listing/static/js/main.8212912c.js.map"
   },
   "entrypoints": [
     "static/css/main.5f919f8b.css",
-    "static/js/main.7eb8f3ec.js"
+    "static/js/main.8212912c.js"
   ]
 }
