@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Card = ({company, logo, _new, featured,position,role,level,postedAt,contract,location,languages,tools=[]}) => {
+export const Card = ({company, logo, _new, featured,position,role,level,postedAt,contract,location,languages,tools=[], setRole, setLevel}) => {
 
 
   return (
@@ -31,12 +31,12 @@ export const Card = ({company, logo, _new, featured,position,role,level,postedAt
             </div>
 
             <div className="card__tags">
-                <div className='tag' id='tag-role'>{role}</div>
+                <div className='tag' id='tag-role' onClick={()=>{setRole(role)}}>{role}</div>
 
                 {
                     level ? (
 
-                        <div className='tag' id='tag-level'>{level}</div>
+                        <div className='tag' id='tag-level' onClick={()=>{setLevel(level)}}>{level}</div>
                     )
                     : (
                         ''

@@ -11,24 +11,23 @@ import Filters from "./components/Filters";
 function App() {
 
   const [data, setData] = useState([]);
-  const [role,  setRole] = useState('Backend');
-  const [level, setLevel] = useState('Midweight');
+  const [role,  setRole] = useState('Frontend');
+  const [level, setLevel] = useState('Junior');
 
   useEffect (()=>{
     setData(dataJson);
-  },[data, role, level])
+  },[data])
   
 
   let filtredData = [...data];
   if (role) {
-    filtredData = data.filter ((item) => {
+    filtredData = filtredData.filter ((item) => {
         return item.role.includes(role);
       })
     }
     
     if (level) {
         filtredData = filtredData.filter ((item) => {
-            console.log('__' + level + '__' + item.level + '__' + item.level.includes(level));
             return item.level.includes(level);
         })
     }
@@ -42,7 +41,7 @@ function App() {
     <>
       <Header />
       <Filters role={role} level={level} setRole={setRole} setLevel={setLevel} clearFilters={clearFilters}/>
-      <CardList data={filtredData} />
+      <CardList data={filtredData} setRole={setRole} setLevel={setLevel}/>
     </>
   );
 }

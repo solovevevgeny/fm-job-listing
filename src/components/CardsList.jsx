@@ -1,6 +1,6 @@
 import { Card } from './Card';
 
-const CardsList = ({data}) => {
+const CardsList = ({data, setRole, setLevel}) => {
   return (
     <div className="container">
             <div className='cardlist'>
@@ -21,6 +21,8 @@ const CardsList = ({data}) => {
                             languages={item.languages}
                             tools={item.tools}
                             level={item.level}
+                            setRole={setRole}
+                            setLevel={setLevel}
                         />
                     )
                 })
